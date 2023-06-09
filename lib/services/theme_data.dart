@@ -17,6 +17,10 @@ class AppTheme {
 final appThemeProvider = Provider<AppTheme>((ref) {
   return AppTheme(
     themeData: ThemeData(
+      cupertinoOverrideTheme: CupertinoThemeData(
+        
+      ),
+
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: {
           TargetPlatform.android: CupertinoPageTransitionsBuilder(),
@@ -118,7 +122,7 @@ final appThemeProvider = Provider<AppTheme>((ref) {
       ),
     ),
     cupertinoThemeData: CupertinoThemeData(
-      
+
     )
   );
 });
